@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting phone api</title>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- menu section -->
+    <div class="md:py-10 py-7">
+        <div class="container">
+            <div class="flex flex-wrap items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="menu-bar cursor-pointer">
+                        <svg class="md:hidden block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#131318" d="M3 4h18v2H3zm0 7h12v2H3zm0 7h18v2H3z"/></svg>
+                    </div>
+                    <a href="">
+                        <img class="hidden sm:block sm:max-w-[210px] max-w-36" src="assets/img/logos.png" alt="">
+                    </a>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="hidden lg:block">
+                        <ul class="h-menu md:flex md:items-center font-secondary">
+                            <li data-title="Home" class="tooltip hover:text-primary ml-3 leading-none flex items-center justify-center h-12 w-12 rounded-full bg-heading/5 border border-heading/30"><a class="" href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"><path fill="currentColor" d="M16.612 2.214a1.01 1.01 0 0 0-1.242 0L1 13.419l1.243 1.572L4 13.621V26a2.004 2.004 0 0 0 2 2h20a2.004 2.004 0 0 0 2-2V13.63L29.757 15L31 13.428ZM18 26h-4v-8h4Zm2 0v-8a2.002 2.002 0 0 0-2-2h-4a2.002 2.002 0 0 0-2 2v8H6V12.062l10-7.79l10 7.8V26Z"/></svg></a></li>
+                            <li data-title="Edite" class="tooltip hover:text-primary ml-3 leading-none flex items-center justify-center h-12 w-12 rounded-full bg-heading/5 border border-heading/30"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M3.944 11.79a.5.5 0 0 1 .141-.277L14.163 1.435a.5.5 0 0 1 .707 0l3.89 3.89a.5.5 0 0 1 0 .706L8.68 16.11a.5.5 0 0 1-.277.14l-4.595.706a.5.5 0 0 1-.57-.57zm.964.314l-.577 3.76l3.759-.578l9.609-9.608l-3.183-3.182z"/><path d="m15.472 8.173l-3.537-3.53l.707-.708l3.536 3.53z"/></g></svg></a></li>
+                            <li data-title="Profile" class="tooltip hover:text-primary ml-3 leading-none flex items-center justify-center h-12 w-12 rounded-full bg-heading/5 border border-heading/30"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 36 36"><path fill="currentColor" d="M30.61 24.52a17.16 17.16 0 0 0-25.22 0a1.51 1.51 0 0 0-.39 1v6A1.5 1.5 0 0 0 6.5 33h23a1.5 1.5 0 0 0 1.5-1.5v-6a1.51 1.51 0 0 0-.39-.98" class="clr-i-solid clr-i-solid-path-1"/><circle cx="18" cy="10" r="7" fill="currentColor" class="clr-i-solid clr-i-solid-path-2"/><path fill="none" d="M0 0h36v36H0z"/></svg></a></li>
+                            <li data-title="Flag" class="tooltip hover:text-primary ml-3 leading-none flex items-center justify-center h-12 w-12 rounded-full bg-heading/5 border border-heading/30"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256"><path fill="currentColor" d="M34.76 42A8 8 0 0 0 32 48v168a8 8 0 0 0 16 0v-44.23c26.79-21.16 49.87-9.75 76.45 3.41c16.4 8.11 34.06 16.85 53 16.85c13.93 0 28.54-4.75 43.82-18a8 8 0 0 0 2.76-6V48a8 8 0 0 0-13.27-6c-28 24.23-51.72 12.49-79.21-1.12C103.07 26.76 70.78 10.79 34.76 42M208 164.25c-26.79 21.16-49.87 9.74-76.45-3.41c-25-12.35-52.81-26.13-83.55-8.4V51.79c26.79-21.16 49.87-9.75 76.45 3.4c25 12.35 52.82 26.13 83.55 8.4Z"/></svg></a></li>
+
+                        </ul>
+                    </div>
+                    <div class="flex flex-wrap items-center">
+                        <a href="" class="btn btn-primary rounded-full px-8 py-2">Sign In</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-wrappar">
+                <div class="mobile-menu p-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner section -->
+    <div class="pb-8">
+        <div class="container">
+            <div class="relative z-20 lg:flex items-center justify-between lg:py-20 py-10 lg:px-20 px-6 bg-heading gap-12 rounded-[32px] ">
+                <img class="absolute left-0 bottom-0 w-full h-auto object-cover -z-10" src="assets/img/bgbanner.png" alt="">
+                <div class="lines text-center">
+                    <h1 class="lg:text-left lg:text-6xl text-white">Welcome to the <br> <span class="text-primary">ReTro</span> Forum</h1>
+                    <div class="max-w-[400px] lg:ml-0 mx-auto">
+                        <p class="mb-7 mt-7 text-white/80 lg:text-left text-xl font-medium font-primary my-4">Share your favorite opinion and win and wp forum coffee mug!</p>
+                    <div class="relative lg:mb-0 mb-7">
+                        <input id="search-box" class="pr-32 rounded-full" type="text" placeholder="Search here anything">
+                        <button onclick="handerlSearch();" class="absolute right-2 top-2 btn btn-primary py-[6px]  px-6 rounded-full">Search</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="lg:w-96 w-full p-8 rounded-2xl bg-white">
+                    <div class="mb-3 flex flex-wrap items-center justify-between">
+                        <p class="font-medium font-primary text-xl text-heading/8">Registered Users</p>
+                        <p class="font-medium font-primary text-xl text-heading/8">01</p>
+                    </div>
+                    <div class="mb-3 flex flex-wrap items-center justify-between">
+                        <p class="font-medium font-primary text-xl text-heading/8">Forum</p>
+                        <p class="font-medium font-primary text-xl text-heading/8">05</p>
+                    </div>
+                    <div class="mb-3 flex flex-wrap items-center justify-between">
+                        <p class="font-medium font-primary text-xl text-heading/8">Topics</p>
+                        <p class="font-medium font-primary text-xl text-heading/8">01</p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-between">
+                        <p class="font-medium font-primary text-xl text-heading/8">Replies</p>
+                        <p class="font-medium font-primary text-xl text-heading/8">01</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- All Posts Sections -->
+    <div class="pb-16">
+        <div class="container">
+            <div class="max-w-2xl mx-auto text-center">
+                <h3 class="lg:text-4xl mb-4">Let's Discuss</h3>
+                <p class="mb-14">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            </div>
+
+             <!-- loder spinner -->
+            <div id="loading-spinner" class="hidden pb-7">
+                <div class="mx-auto spinner border-2 h-6 w-6 rounded-full border-primary border-t-transparent"></div>
+            </div>
+
+            <!-- dynamic code  -->
+            <div class="grid lg:grid-cols-[750px,minmax(0,1fr)] gap-6 items-start" >
+
+                <div class="" id="all-posts-container">
+                    <!-- all posts code -->
+
+                </div>
+                
+                <div class="p-5 rounded-3xl bg-light sticky top-3">
+                    <div class="flex flex-wrap items-center justify-between mb-6">
+                        <h5>Title</h5>
+                        <div class="flex items-center gap-2">
+                            <img src="assets/img/Frame5.svg" alt="">
+                            <p>Mark as read (<span id="view-counter">0</span>)</p>
+                        </div>
+                    </div>
+
+                    <div class="" id="sidebar-post">
+                        
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+     <!-- loder spinner -->
+     <div id="loading-spinner" class="hidden pb-7">
+        <div class="mx-auto spinner border-2 h-6 w-6 rounded-full border-primary border-t-transparent"></div>
+    </div>
+
+    <!-- Join Our Forum -->
+    <div class="pb-16">
+        <div class="container">
+            <div class="lg:flex gap-3 items-center justify-between bg-heading rounded-[32px] p-8 lg:p-16">
+                <div class="text-center lg:text-left lg:mb-0 mb-12">
+                    <h3 class="text-white lg:text-4xl mb-4">Join Our Forum</h3>
+                    <p class="text-white/80 font-primary mb-5">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
+                    <button class="btn btn-primary rounded-full px-8">Registered Now</button>
+                </div>
+                <img class=" m-auto" src="assets/img/joinforum.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest Posts section -->
+    <div class="pb-16">
+        <div class="container">
+            <div class="max-w-2xl mx-auto text-center">
+                <h3 class="lg:text-4xl mb-4">Latest Posts</h3>
+                <p class="mb-10">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            </div>
+
+            <div class="">
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6" id="latest-post-container">
+
+                    <!-- all latest posts code -->
+                   
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer sections -->
+    <div class="tick-banner">
+        <div class="container">
+            <div class=" py-20">
+                <div class="max-w-2xl mx-auto text-center">
+                    <a href="">
+                        <img class="sm:max-w-[210px] max-w-36" src="assets/img/logos.png" alt="">
+                    </a>
+                    <p class="mt-4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+                    <div class="flex items-center justify-center mt-8 gap-4 lg:pb-10 pb-6">
+                        <a href="" class="hover:text-primary duration-300 text-heading">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"/></svg>
+                        </a>
+                        <a href="" class="hover:text-primary duration-300 text-heading">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg></svg>
+                        </a>
+                        <a href="" class="hover:text-primary duration-300 text-heading">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C5.829 0 5.556.01 4.703.048C3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7C.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297c.04.852.174 1.433.372 1.942c.205.526.478.972.923 1.417c.444.445.89.719 1.416.923c.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417c.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046c.78.035 1.204.166 1.486.275c.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485c.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598c-.28.11-.704.24-1.485.276c-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598a2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485c-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486c.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276c.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92a.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217a4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334a2.667 2.667 0 0 1 0-5.334"/></svg>
+                        </a>
+                        <a href="" class="hover:text-primary duration-300 text-heading">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="border-t border-heading/20">
+                    <p class="text-base font-primary text-center mt-10">2017, All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <script src="assets/js/main.js"></script>
+ 
+</body>
+</html>

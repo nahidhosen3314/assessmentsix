@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply text-paragraph font-primary;
+    }
+    h1,h2,h3,h4,h5,h6{
+        @apply font-black text-heading;
+    }
+    h1{
+        @apply text-5xl;
+    }
+    h2{
+        @apply text-4xl;
+    }
+    h3{
+        @apply text-3xl;
+    }
+    h4{
+        @apply text-2xl;
+    }
+    h5{
+        @apply text-xl;
+    }
+    h6{
+        @apply text-lg;
+    }
+    p{
+        @apply md:text-lg text-base leading-6 text-paragraph font-secondary;
+    }
+    input, textarea {
+        @apply w-full text-base font-medium font-primary py-4 px-4 rounded-xl outline-none focus-visible:outline-none bg-white;
+    }
+    a{
+        @apply inline-block;
+    }
+    label{
+        @apply w-full;
+    }
+    li{
+        @apply font-medium md:text-base text-sm leading-6 text-paragraph cursor-pointer;
+    }
+}
+
+@layer components{
+    button{
+        @apply px-4 py-2 rounded-lg text-xl font-bold inline-block;
+    }
+    .btn{
+        @apply  px-4 py-2 rounded-lg text-xl font-bold inline-block;
+    }
+    .btn-primary{
+        @apply text-white bg-primary hover:shadow-lg;
+    }
+    .btn-secondary{
+        @apply text-white bg-secondary;
+    }
+}
+
+
+
+/* keyfream or loder */
+.spinner{
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner{
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip::before {
+    content: attr(data-title);
+    position: absolute;
+    background: #000;
+    color: #fff;
+    top: -32px;
+    padding: 4px 5px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+}
+.tooltip::after {
+    content: "";
+    position: absolute;
+    border: 6px solid transparent;
+    border-top-color: #000;
+    top: -8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+}
+.tooltip:hover::before,
+.tooltip:hover::after{
+    @apply opacity-100 visible;
+}
+
+/* ------------- Menu ----------------- */
+
+/* ;;;;;;;;;;;; New Code ;;;;;;;;;;;;;;; */
+
+.lines h1{
+    @apply lg:leading-[72px] leading-[50px];
+}
+
+.tick-banner {
+    background: linear-gradient(#F3F3F5,#0000);
+}
+
+.active-status{
+    @apply bg-[#FF3434];
+}
+
+.active-status.active{
+    @apply bg-[#10B981];
+}
+
+
+.mobile-menu {
+	/* position: absolute; */
+	left: -300px;
+	width: 300px;
+	background: #fff;
+	z-index: 1;
+	transition: all .5s;
+	max-height: 100%;
+	overflow-y: auto;
+}
+
+.mobile-menu.active {
+    left: 0;
+    transition: all .5s;
+}
+ 
+
+.mobile-menu-wrappar {
+	position: fixed;
+	z-index: 10;
+	-webkit-backdrop-filter: blur(14px);
+	backdrop-filter: blur(14px);
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	height: 100vh;
+}
+
+/* ------- something wrong -------- */
+
+
+body.menu-active .mobile-menu-wrappar {
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s;
+}
+
+body.menu-active {
+	overflow: hidden;
+}
+
+.mobile-menu li{
+    margin-bottom: 8px;
+}

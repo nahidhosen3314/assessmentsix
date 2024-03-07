@@ -1,0 +1,10 @@
+Tailwind CSS Install
+
+01: npm init -y  (package.json)
+02: npm install -D tailwindcss postcss autoprefixer (package-lock.json)
+03: npx tailwindcss init (tailwindcss.config.js)
+04: npm install(optional)
+
+result: npm run dev
+
+Class show is  Install = > tailwindcss intellisense
